@@ -1,5 +1,6 @@
 HW/*
 !HW/*.cpp
+!HW/*.txt
 .vs
 x64
 ConsoleApplication1
