@@ -18,19 +18,19 @@ int main4_3()
 		std::cout << "Enter two rectangle sides\n";
 		double a, b;
 		std::cin >> a >> b;
-		rectangle_area(a, b);
+		std::cout << rectangle_area(a, b);
 		break;
 	} case 't': {
 		std::cout << "Enter three triangle sides\n";
 		double a, b, c;
 		std::cin >> a >> b >> c;
-		triangle_area(a, b, c);
+		std::cout << triangle_area(a, b, c);
 		break;
 	} case 'c': {
 		std::cout << "Enter circle radius\n";
 		double r;
 		std::cin >> r;
-		circle_area(r);
+		std::cout << circle_area(r);
 		break;
 	} default:
 		error("Invalid input\n");
@@ -42,7 +42,7 @@ int main4_3()
 void error4_3(std::string msg)
 {
 	std::cerr << "error: " << msg << "\n>>>>>>\n";
-	main4_3();
+	exit(1);
 }
 
 double rectangle_area(double a, double b)
