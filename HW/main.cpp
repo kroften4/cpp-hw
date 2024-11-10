@@ -29,6 +29,12 @@ int main4_7();
 int main4_8();
 int main4_9();
 
+int main5_1();
+int main5_2();
+int main5_3();
+int main5_4();
+int main5_5();
+
 int main()
 {
 	map<string, function<int()>> functions;
@@ -59,6 +65,12 @@ int main()
 	functions["4-7"] = main4_7;
 	functions["4-8"] = main4_8;
 	functions["4-9"] = main4_9;
+
+	functions["5-1"] = main5_1;
+	functions["5-2"] = main5_2;
+	functions["5-3"] = main5_3;
+	functions["5-4"] = main5_4;
+	functions["5-5"] = main5_5;
 
 	cout << "Enter the task number\n";
 	string task;
