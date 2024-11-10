@@ -1,4 +1,5 @@
 import std;
+using std::string, std::map, std::function, std::cin, std::cout, std::numeric_limits, std::streamsize;
 
 int main1_1();
 int main1_2();
@@ -30,7 +31,7 @@ int main4_9();
 
 int main()
 {
-	std::map<std::string, std::function<int()>> functions;
+	map<string, function<int()>> functions;
 	functions["1-1"] = main1_1;
 	functions["1-2"] = main1_2;
 	functions["1-3"] = main1_3;
@@ -59,19 +60,19 @@ int main()
 	functions["4-8"] = main4_8;
 	functions["4-9"] = main4_9;
 
-	std::cout << "Enter the task number\n";
-	std::string task;
-	std::cin >> task;
-	std::cout << "=====================\n\n";
+	cout << "Enter the task number\n";
+	string task;
+	cin >> task;
+	cout << "=====================\n\n";
 
 	char next = 'y';
 	while (next == 'y') {
 		functions[task]();
-		std::cin.clear();
-		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		std::cout << "\n<<<<<<\n"
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "\n<<<<<<\n"
 			<< "Continue? [y/n]: ";
-		std::cin >> next;
-		std::cout << ">>>>>>\n\n";
+		cin >> next;
+		cout << ">>>>>>\n\n";
 	}
 }
