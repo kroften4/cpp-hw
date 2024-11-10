@@ -67,6 +67,8 @@ int main()
 	char next = 'y';
 	while (next == 'y') {
 		functions[task]();
+		std::cin.clear();
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 		std::cout << "\n<<<<<<\n"
 			<< "Continue? [y/n]: ";
 		std::cin >> next;
