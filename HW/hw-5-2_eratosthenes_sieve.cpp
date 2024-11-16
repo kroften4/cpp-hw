@@ -6,8 +6,12 @@ int main5_2()
 	cout << "Enter upper boundary: ";
 	int bound;
 	cin >> bound;
+	if (bound < 2) {
+		cout << "Invalid boundary: must be greater than 1\n";
+	}
+
 	vector<int> sieve = { 2 };
-	for (int n = 2; n < bound; n++) {
+	for (int n = 2; n <= bound; n++) {
 		bool is_prime = true;
 		for (int prime : sieve) {
 			if (n % prime == 0) {

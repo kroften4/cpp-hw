@@ -34,6 +34,12 @@ int main5_2();
 int main5_3();
 int main5_4();
 int main5_5();
+int main5_6();
+
+int main6_1();
+int main6_2();
+int main6_3();
+int main6_4();
 
 int main()
 {
@@ -71,6 +77,12 @@ int main()
 	functions["5-3"] = main5_3;
 	functions["5-4"] = main5_4;
 	functions["5-5"] = main5_5;
+	functions["5-6"] = main5_6;
+
+	functions["6-1"] = main6_1;
+	functions["6-2"] = main6_2;
+	functions["6-3"] = main6_3;
+	functions["6-4"] = main6_4;
 
 	cout << "Enter the task number\n";
 	string task;
